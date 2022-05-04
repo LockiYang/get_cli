@@ -91,7 +91,8 @@ class CreatePageCommand extends Command {
         isServer,
         overwrite: overwrite,
       ),
-      'controllers',
+      // 'controllers',
+      '',
     );
     var controllerDir = Structure.pathToDirImport(controllerFile.path);
     var viewFile = handleFileCreate(
@@ -107,7 +108,8 @@ class CreatePageCommand extends Command {
         isServer,
         overwrite: overwrite,
       ),
-      'views',
+      // 'views',
+      '',
     );
     var bindingFile = handleFileCreate(
       name,
@@ -122,7 +124,8 @@ class CreatePageCommand extends Command {
         isServer,
         overwrite: overwrite,
       ),
-      'bindings',
+      // 'bindings',
+      '',
     );
 
     addRoute(

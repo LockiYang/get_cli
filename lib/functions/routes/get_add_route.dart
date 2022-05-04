@@ -35,7 +35,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
 
   ///remove view folder
   if (PubspecUtils.extraFolder ?? true) {
-    pathSplit.removeLast();
+    // pathSplit.removeLast();
   }
 
   pathSplit.removeWhere((element) => element == 'app' || element == 'modules');
